@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		570D07432358A4D200F8948D /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07422358A4D200F8948D /* secrets.swift */; };
+		570D07522358AFEB00F8948D /* FacebookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07512358AFEB00F8948D /* FacebookEvent.swift */; };
+		570D07552358B05400F8948D /* FacebookEventListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07542358B05400F8948D /* FacebookEventListResult.swift */; };
+		570D07572358B08B00F8948D /* FacebookEventCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07562358B08B00F8948D /* FacebookEventCover.swift */; };
+		570D07592358B0A100F8948D /* FacebookEventPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07582358B0A100F8948D /* FacebookEventPlace.swift */; };
+		570D075B2358B0B200F8948D /* FacebookEventListPaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D075A2358B0B200F8948D /* FacebookEventListPaging.swift */; };
+		570D075D2358B0C500F8948D /* FacebookEventListCursors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D075C2358B0C500F8948D /* FacebookEventListCursors.swift */; };
 		6B5B762BB00B83DBCAE161C2 /* Pods_IOS_TaipeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F4BF400E00DDF6CB29EC8 /* Pods_IOS_TaipeiTests.framework */; };
 		6F01E664D03065B150B60B2B /* Pods_IOS_TaipeiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CF5B62EB9FA96EFAA2245A /* Pods_IOS_TaipeiUITests.framework */; };
 		B02F0E0334A2C5CDE1786F7E /* Pods_IOS_Taipei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8588AD7A406F19E7BD4C097 /* Pods_IOS_Taipei.framework */; };
@@ -42,6 +48,12 @@
 		12F22F9E1506689E55701B4F /* Pods-IOS@TaipeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@TaipeiTests.release.xcconfig"; path = "Target Support Files/Pods-IOS@TaipeiTests/Pods-IOS@TaipeiTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D714C9DC9D9DD4ED52101B3 /* Pods-IOS@Taipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei.release.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei.release.xcconfig"; sourceTree = "<group>"; };
 		570D07422358A4D200F8948D /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		570D07512358AFEB00F8948D /* FacebookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEvent.swift; sourceTree = "<group>"; };
+		570D07542358B05400F8948D /* FacebookEventListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEventListResult.swift; sourceTree = "<group>"; };
+		570D07562358B08B00F8948D /* FacebookEventCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEventCover.swift; sourceTree = "<group>"; };
+		570D07582358B0A100F8948D /* FacebookEventPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEventPlace.swift; sourceTree = "<group>"; };
+		570D075A2358B0B200F8948D /* FacebookEventListPaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEventListPaging.swift; sourceTree = "<group>"; };
+		570D075C2358B0C500F8948D /* FacebookEventListCursors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookEventListCursors.swift; sourceTree = "<group>"; };
 		A23F2708D2FD2EB05B481A3D /* Pods-IOS@TaipeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@TaipeiUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS@TaipeiUITests/Pods-IOS@TaipeiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8588AD7A406F19E7BD4C097 /* Pods_IOS_Taipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Taipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91523523F1500BA85F8 /* IOS@Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS@Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +135,7 @@
 		570D07492358AE9800F8948D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				570D07532358B03000F8948D /* FacebookEvent */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +149,19 @@
 				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		570D07532358B03000F8948D /* FacebookEvent */ = {
+			isa = PBXGroup;
+			children = (
+				570D07542358B05400F8948D /* FacebookEventListResult.swift */,
+				570D07512358AFEB00F8948D /* FacebookEvent.swift */,
+				570D07562358B08B00F8948D /* FacebookEventCover.swift */,
+				570D07582358B0A100F8948D /* FacebookEventPlace.swift */,
+				570D075A2358B0B200F8948D /* FacebookEventListPaging.swift */,
+				570D075C2358B0C500F8948D /* FacebookEventListCursors.swift */,
+			);
+			path = FacebookEvent;
 			sourceTree = "<group>";
 		};
 		C17FB90C23523F1500BA85F8 = {
@@ -426,8 +452,14 @@
 			files = (
 				C17FB91D23523F1500BA85F8 /* SecondViewController.swift in Sources */,
 				570D07432358A4D200F8948D /* secrets.swift in Sources */,
+				570D075D2358B0C500F8948D /* FacebookEventListCursors.swift in Sources */,
+				570D07522358AFEB00F8948D /* FacebookEvent.swift in Sources */,
+				570D07572358B08B00F8948D /* FacebookEventCover.swift in Sources */,
+				570D075B2358B0B200F8948D /* FacebookEventListPaging.swift in Sources */,
+				570D07592358B0A100F8948D /* FacebookEventPlace.swift in Sources */,
 				C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */,
 				C17FB91B23523F1500BA85F8 /* FirstViewController.swift in Sources */,
+				570D07552358B05400F8948D /* FacebookEventListResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
