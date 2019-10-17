@@ -21,6 +21,8 @@
 		C1FBD84823590254003AB0D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FBD84723590254003AB0D0 /* GoogleService-Info.plist */; };
 		C1FBD84A235903A8003AB0D0 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */; };
 		C1FBD84D23590B0E003AB0D0 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FBD84C23590B0E003AB0D0 /* RemoteConfigDefaults.plist */; };
+		C1FBD84F23591734003AB0D0 /* RemoteConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBD84E23591734003AB0D0 /* RemoteConfigTests.swift */; };
+		C1FBD85023591783003AB0D0 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		C1FBD84723590254003AB0D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		C1FBD84C23590B0E003AB0D0 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		C1FBD84E23591734003AB0D0 /* RemoteConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigTests.swift; sourceTree = "<group>"; };
 		C4CC5DD8328ABB9630209C96 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Taipei_IOS_TaipeiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B69117E09D64B0733EBD96 /* Pods-IOS@Taipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei.debug.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D1A9C4EB3717CA0B003853 /* Pods_IOS_TaipeiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_TaipeiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,7 @@
 		C17FB92E23523F1500BA85F8 /* IOS@TaipeiTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1FBD84E23591734003AB0D0 /* RemoteConfigTests.swift */,
 				C17FB92F23523F1500BA85F8 /* IOS_TaipeiTests.swift */,
 				C17FB93123523F1500BA85F8 /* Info.plist */,
 			);
@@ -454,6 +458,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17FB93023523F1500BA85F8 /* IOS_TaipeiTests.swift in Sources */,
+				C1FBD84F23591734003AB0D0 /* RemoteConfigTests.swift in Sources */,
+				C1FBD85023591783003AB0D0 /* RemoteConfigManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
