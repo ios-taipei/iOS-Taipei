@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -103,6 +103,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		570D07462358AE5100F8948D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C17FB91A23523F1500BA85F8 /* FirstViewController.swift */,
+				C17FB91C23523F1500BA85F8 /* SecondViewController.swift */,
+				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		570D07482358AE8000F8948D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		570D07492358AE9800F8948D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		570D074E2358AF7B00F8948D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				570D07422358A4D200F8948D /* secrets.swift */,
+				C17FB92623523F1500BA85F8 /* Info.plist */,
+				C17FB92123523F1500BA85F8 /* Assets.xcassets */,
+				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		C17FB90C23523F1500BA85F8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				C17FB91823523F1500BA85F8 /* AppDelegate.swift */,
-				C17FB91A23523F1500BA85F8 /* FirstViewController.swift */,
-				C17FB91C23523F1500BA85F8 /* SecondViewController.swift */,
-				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
-				C17FB92123523F1500BA85F8 /* Assets.xcassets */,
-				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
-				C17FB92623523F1500BA85F8 /* Info.plist */,
-				570D07422358A4D200F8948D /* secrets.swift */,
+				570D07462358AE5100F8948D /* UI */,
+				570D07492358AE9800F8948D /* Model */,
+				570D07482358AE8000F8948D /* Repository */,
+				570D074E2358AF7B00F8948D /* Support */,
 			);
 			path = "IOS@Taipei";
 			sourceTree = "<group>";
@@ -168,7 +200,6 @@
 				FA85DD58A59A3603622E6983 /* Pods-IOS@TaipeiUITests.debug.xcconfig */,
 				A23F2708D2FD2EB05B481A3D /* Pods-IOS@TaipeiUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
