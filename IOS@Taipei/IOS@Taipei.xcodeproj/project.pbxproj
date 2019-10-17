@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3846634703827145B5E54148 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CC5DD8328ABB9630209C96 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework */; };
+		4DBA5DD90CBA40F0B8F31BA7 /* Pods_IOS_Taipei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556B1F2EF46475F89FF84E7D /* Pods_IOS_Taipei.framework */; };
+		A61C4810540E68C870A6DAC9 /* Pods_IOS_TaipeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1A9C4EB3717CA0B003853 /* Pods_IOS_TaipeiTests.framework */; };
 		C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91823523F1500BA85F8 /* AppDelegate.swift */; };
 		C17FB91B23523F1500BA85F8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91A23523F1500BA85F8 /* FirstViewController.swift */; };
 		C17FB91D23523F1500BA85F8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91C23523F1500BA85F8 /* SecondViewController.swift */; };
@@ -15,6 +18,9 @@
 		C17FB92523523F1500BA85F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */; };
 		C17FB93023523F1500BA85F8 /* IOS_TaipeiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB92F23523F1500BA85F8 /* IOS_TaipeiTests.swift */; };
 		C17FB93B23523F1500BA85F8 /* IOS_TaipeiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB93A23523F1500BA85F8 /* IOS_TaipeiUITests.swift */; };
+		C1FBD84823590254003AB0D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FBD84723590254003AB0D0 /* GoogleService-Info.plist */; };
+		C1FBD84A235903A8003AB0D0 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */; };
+		C1FBD84D23590B0E003AB0D0 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FBD84C23590B0E003AB0D0 /* RemoteConfigDefaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EEE472DED9D001827A33A71 /* Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		369155A9A9D7B25ACFAA60EE /* Pods-IOS@TaipeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@TaipeiTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS@TaipeiTests/Pods-IOS@TaipeiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		556B1F2EF46475F89FF84E7D /* Pods_IOS_Taipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Taipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B46E59FF4CB1D5342538F7 /* Pods-IOS@Taipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei.release.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei.release.xcconfig"; sourceTree = "<group>"; };
+		7D16942C277C90D7D99A5C7F /* Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		867228F15D8F24C86FD205E1 /* Pods-IOS@TaipeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@TaipeiTests.release.xcconfig"; path = "Target Support Files/Pods-IOS@TaipeiTests/Pods-IOS@TaipeiTests.release.xcconfig"; sourceTree = "<group>"; };
 		C17FB91523523F1500BA85F8 /* IOS@Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS@Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91823523F1500BA85F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17FB91A23523F1500BA85F8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,12 @@
 		C17FB93623523F1500BA85F8 /* IOS@TaipeiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS@TaipeiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB93A23523F1500BA85F8 /* IOS_TaipeiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_TaipeiUITests.swift; sourceTree = "<group>"; };
 		C17FB93C23523F1600BA85F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1FBD84723590254003AB0D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		C1FBD84C23590B0E003AB0D0 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		C4CC5DD8328ABB9630209C96 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Taipei_IOS_TaipeiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B69117E09D64B0733EBD96 /* Pods-IOS@Taipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei.debug.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei.debug.xcconfig"; sourceTree = "<group>"; };
+		F9D1A9C4EB3717CA0B003853 /* Pods_IOS_TaipeiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_TaipeiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBA5DD90CBA40F0B8F31BA7 /* Pods_IOS_Taipei.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61C4810540E68C870A6DAC9 /* Pods_IOS_TaipeiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3846634703827145B5E54148 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4350FAE5CDA3B24F5AF75E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556B1F2EF46475F89FF84E7D /* Pods_IOS_Taipei.framework */,
+				C4CC5DD8328ABB9630209C96 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework */,
+				F9D1A9C4EB3717CA0B003853 /* Pods_IOS_TaipeiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C17FB90C23523F1500BA85F8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				C17FB92E23523F1500BA85F8 /* IOS@TaipeiTests */,
 				C17FB93923523F1500BA85F8 /* IOS@TaipeiUITests */,
 				C17FB91623523F1500BA85F8 /* Products */,
+				D35498A793B3EC61E448AF2A /* Pods */,
+				4350FAE5CDA3B24F5AF75E8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +132,13 @@
 		C17FB91723523F1500BA85F8 /* IOS@Taipei */ = {
 			isa = PBXGroup;
 			children = (
+				C1FBD84B23590569003AB0D0 /* Manager */,
+				C1FBD843235900E2003AB0D0 /* Supporting Files */,
+				C1FBD842235900C5003AB0D0 /* Storyboards */,
 				C17FB91823523F1500BA85F8 /* AppDelegate.swift */,
 				C17FB91A23523F1500BA85F8 /* FirstViewController.swift */,
 				C17FB91C23523F1500BA85F8 /* SecondViewController.swift */,
-				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
 				C17FB92123523F1500BA85F8 /* Assets.xcassets */,
-				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
-				C17FB92623523F1500BA85F8 /* Info.plist */,
 			);
 			path = "IOS@Taipei";
 			sourceTree = "<group>";
@@ -128,6 +161,46 @@
 			path = "IOS@TaipeiUITests";
 			sourceTree = "<group>";
 		};
+		C1FBD842235900C5003AB0D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
+				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C1FBD843235900E2003AB0D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBD84723590254003AB0D0 /* GoogleService-Info.plist */,
+				C17FB92623523F1500BA85F8 /* Info.plist */,
+				C1FBD84C23590B0E003AB0D0 /* RemoteConfigDefaults.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1FBD84B23590569003AB0D0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBD849235903A8003AB0D0 /* RemoteConfigManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D35498A793B3EC61E448AF2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2B69117E09D64B0733EBD96 /* Pods-IOS@Taipei.debug.xcconfig */,
+				78B46E59FF4CB1D5342538F7 /* Pods-IOS@Taipei.release.xcconfig */,
+				7D16942C277C90D7D99A5C7F /* Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig */,
+				1EEE472DED9D001827A33A71 /* Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig */,
+				369155A9A9D7B25ACFAA60EE /* Pods-IOS@TaipeiTests.debug.xcconfig */,
+				867228F15D8F24C86FD205E1 /* Pods-IOS@TaipeiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C17FB93F23523F1600BA85F8 /* Build configuration list for PBXNativeTarget "IOS@Taipei" */;
 			buildPhases = (
+				D50C7CC389F61AEA816D45AA /* [CP] Check Pods Manifest.lock */,
 				C17FB91123523F1500BA85F8 /* Sources */,
 				C17FB91223523F1500BA85F8 /* Frameworks */,
 				C17FB91323523F1500BA85F8 /* Resources */,
+				26EF348EBBB8958D24482692 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C17FB94223523F1600BA85F8 /* Build configuration list for PBXNativeTarget "IOS@TaipeiTests" */;
 			buildPhases = (
+				6FD1C393DD077F2F29F01E06 /* [CP] Check Pods Manifest.lock */,
 				C17FB92723523F1500BA85F8 /* Sources */,
 				C17FB92823523F1500BA85F8 /* Frameworks */,
 				C17FB92923523F1500BA85F8 /* Resources */,
@@ -170,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C17FB94523523F1600BA85F8 /* Build configuration list for PBXNativeTarget "IOS@TaipeiUITests" */;
 			buildPhases = (
+				A65487C085534E9DEDCEA1AE /* [CP] Check Pods Manifest.lock */,
 				C17FB93223523F1500BA85F8 /* Sources */,
 				C17FB93323523F1500BA85F8 /* Frameworks */,
 				C17FB93423523F1500BA85F8 /* Resources */,
+				A1114EB99198C275089FADF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17FB92523523F1500BA85F8 /* LaunchScreen.storyboard in Resources */,
+				C1FBD84D23590B0E003AB0D0 /* RemoteConfigDefaults.plist in Resources */,
+				C1FBD84823590254003AB0D0 /* GoogleService-Info.plist in Resources */,
 				C17FB92223523F1500BA85F8 /* Assets.xcassets in Resources */,
 				C17FB92023523F1500BA85F8 /* Main.storyboard in Resources */,
 			);
@@ -254,12 +334,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26EF348EBBB8958D24482692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei/Pods-IOS@Taipei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD1C393DD077F2F29F01E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS@TaipeiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1114EB99198C275089FADF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A65487C085534E9DEDCEA1AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS@Taipei-IOS@TaipeiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D50C7CC389F61AEA816D45AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS@Taipei-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C17FB91123523F1500BA85F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C17FB91D23523F1500BA85F8 /* SecondViewController.swift in Sources */,
+				C1FBD84A235903A8003AB0D0 /* RemoteConfigManager.swift in Sources */,
 				C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */,
 				C17FB91B23523F1500BA85F8 /* FirstViewController.swift in Sources */,
 			);
@@ -434,6 +618,7 @@
 		};
 		C17FB94023523F1600BA85F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B69117E09D64B0733EBD96 /* Pods-IOS@Taipei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +637,7 @@
 		};
 		C17FB94123523F1600BA85F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B46E59FF4CB1D5342538F7 /* Pods-IOS@Taipei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +656,7 @@
 		};
 		C17FB94323523F1600BA85F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369155A9A9D7B25ACFAA60EE /* Pods-IOS@TaipeiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +677,7 @@
 		};
 		C17FB94423523F1600BA85F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867228F15D8F24C86FD205E1 /* Pods-IOS@TaipeiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +698,7 @@
 		};
 		C17FB94623523F1600BA85F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D16942C277C90D7D99A5C7F /* Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +718,7 @@
 		};
 		C17FB94723523F1600BA85F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EEE472DED9D001827A33A71 /* Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
