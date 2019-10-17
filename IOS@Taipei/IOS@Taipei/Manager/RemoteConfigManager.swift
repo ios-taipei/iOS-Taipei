@@ -32,14 +32,14 @@ final class RemoteConfigManager {
         remoteConfig.configSettings = settings
     }
     
-    func getValue(completion: @escaping (([RemoteConfigKeys: RemoteConfigValue]) -> Void)) {
+    func getValue(from key: RemoteConfigKeys, completion: @escaping ((RemoteConfigValue?) -> Void)) {
         remoteConfig.fetch(withExpirationDuration: remoteConfig.configSettings.minimumFetchInterval) { [weak self] status, error in
             guard let self = self else { return }
             if status == .success {
                 self.remoteConfig.activate(completionHandler: nil)
                 self.setValues()
                 DispatchQueue.main.async {
-                    completion(self.values)
+                    completion(self.values[.fbToken])
                 }
             } else {
                 
