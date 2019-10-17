@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570D07432358A4D200F8948D /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D07422358A4D200F8948D /* secrets.swift */; };
 		C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91823523F1500BA85F8 /* AppDelegate.swift */; };
 		C17FB91B23523F1500BA85F8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91A23523F1500BA85F8 /* FirstViewController.swift */; };
 		C17FB91D23523F1500BA85F8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91C23523F1500BA85F8 /* SecondViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570D07422358A4D200F8948D /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
 		C17FB91523523F1500BA85F8 /* IOS@Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS@Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91823523F1500BA85F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17FB91A23523F1500BA85F8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C17FB92123523F1500BA85F8 /* Assets.xcassets */,
 				C17FB92323523F1500BA85F8 /* LaunchScreen.storyboard */,
 				C17FB92623523F1500BA85F8 /* Info.plist */,
+				570D07422358A4D200F8948D /* secrets.swift */,
 			);
 			path = "IOS@Taipei";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17FB91D23523F1500BA85F8 /* SecondViewController.swift in Sources */,
+				570D07432358A4D200F8948D /* secrets.swift in Sources */,
 				C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */,
 				C17FB91B23523F1500BA85F8 /* FirstViewController.swift in Sources */,
 			);

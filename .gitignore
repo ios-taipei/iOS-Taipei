@@ -27,3 +27,6 @@ DerivedData
 #
 Pods/
 Carthage
+
+# App
+secrets.swift
