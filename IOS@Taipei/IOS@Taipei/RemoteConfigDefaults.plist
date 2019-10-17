@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>iosAtTaipei_FBToken</key>
-	<string></string>
+	<string>this is not an valid token</string>
 </dict>
 </plist>

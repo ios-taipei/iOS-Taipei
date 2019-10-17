@@ -18,32 +18,42 @@ final class RemoteConfigManager {
     
     static let shared: RemoteConfigManager = RemoteConfigManager()
     
-    private let remoteConfig: RemoteConfig = RemoteConfig.remoteConfig()
+    let remoteConfig: RemoteConfig = RemoteConfig.remoteConfig()
     
     private(set) var values: [RemoteConfigKeys: RemoteConfigValue] = [:]
     
     private init() {
         setDefaultValue()
         let settings: RemoteConfigSettings = RemoteConfigSettings()
+        
         #if DEBUG
         // default value of minimumFetchInterval is 43200.0
         settings.minimumFetchInterval = 0
         #endif
+        
         remoteConfig.configSettings = settings
+        fetch(with: remoteConfig.configSettings.minimumFetchInterval,
+              completion: nil)
     }
     
-    func getValue(from key: RemoteConfigKeys, completion: @escaping ((RemoteConfigValue?) -> Void)) {
+    private func fetch(with minimumInterval: TimeInterval, completion: (() -> Void)?) {
         remoteConfig.fetch(withExpirationDuration: remoteConfig.configSettings.minimumFetchInterval) { [weak self] status, error in
             guard let self = self else { return }
             if status == .success {
                 self.remoteConfig.activate(completionHandler: nil)
-                self.setValues()
-                DispatchQueue.main.async {
-                    completion(self.values[.fbToken])
-                }
-            } else {
-                
+                self.setValuesFromRemote()
+                completion?()
             }
+        }
+    }
+    
+    func getValue(from key: RemoteConfigKeys, completion: @escaping ((RemoteConfigValue?) -> Void)) {
+        guard values.isEmpty else {
+            completion(remoteConfig.configValue(forKey: key.rawValue))
+            return
+        }
+        fetch(with: remoteConfig.configSettings.minimumFetchInterval) {
+            completion(self.values[key])
         }
     }
     
@@ -53,7 +63,7 @@ final class RemoteConfigManager {
     
     // to know list with prefix of centain words in keys
     // RemoteConfig.remoteConfig().keys(withPrefix: "iosAtTaipei")
-    private func setValues() {
+    private func setValuesFromRemote() {
         let configKeys: Set<String> = remoteConfig.keys(withPrefix: RemoteConfigKeys.prefix)
         
         for configKey in configKeys {
