@@ -60,8 +60,8 @@
 		A8588AD7A406F19E7BD4C097 /* Pods_IOS_Taipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Taipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91523523F1500BA85F8 /* IOS@Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS@Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91823523F1500BA85F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C17FB91A23523F1500BA85F8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		C17FB91C23523F1500BA85F8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C17FB91A23523F1500BA85F8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../FirstViewController.swift; sourceTree = "<group>"; };
+		C17FB91C23523F1500BA85F8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
 		C17FB91F23523F1500BA85F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C17FB92123523F1500BA85F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17FB92423523F1500BA85F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,9 +120,10 @@
 		570D07462358AE5100F8948D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C17FB91A23523F1500BA85F8 /* FirstViewController.swift */,
-				C17FB91C23523F1500BA85F8 /* SecondViewController.swift */,
-				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
+				570D07B7235990F500F8948D /* Routers */,
+				570D07B5235990D500F8948D /* Views */,
+				570D07B3235990B600F8948D /* VCs */,
+				570D07B22359909600F8948D /* SBs */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -167,6 +168,79 @@
 			path = FacebookEvent;
 			sourceTree = "<group>";
 		};
+		570D07AA23598F5000F8948D /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		570D07AB23598F5C00F8948D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		570D07AC23598F7900F8948D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		570D07AE2359901D00F8948D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		570D07AF2359902700F8948D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		570D07B02359903600F8948D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		570D07B22359909600F8948D /* SBs */ = {
+			isa = PBXGroup;
+			children = (
+				C17FB91E23523F1500BA85F8 /* Main.storyboard */,
+			);
+			path = SBs;
+			sourceTree = "<group>";
+		};
+		570D07B3235990B600F8948D /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				C17FB91A23523F1500BA85F8 /* FirstViewController.swift */,
+				C17FB91C23523F1500BA85F8 /* SecondViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		570D07B5235990D500F8948D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		570D07B7235990F500F8948D /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		C17FB90C23523F1500BA85F8 = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +268,14 @@
 			children = (
 				C17FB91823523F1500BA85F8 /* AppDelegate.swift */,
 				570D07462358AE5100F8948D /* UI */,
-				570D07622358BE5E00F8948D /* Model */,
 				570D07482358AE8000F8948D /* Repository */,
+				570D07AA23598F5000F8948D /* API */,
+				570D07622358BE5E00F8948D /* Model */,
+				570D07AB23598F5C00F8948D /* Database */,
+				570D07AC23598F7900F8948D /* Utilities */,
+				570D07AF2359902700F8948D /* Extensions */,
+				570D07AE2359901D00F8948D /* Constants */,
+				570D07B02359903600F8948D /* Resources */,
 				570D074E2358AF7B00F8948D /* Support */,
 			);
 			path = "IOS@Taipei";
