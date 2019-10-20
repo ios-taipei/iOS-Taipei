@@ -43,6 +43,8 @@ final class RemoteConfigManager {
                 self.remoteConfig.activate(completionHandler: nil)
                 self.setValuesFromRemote()
                 completion?()
+            } else {
+                completion?()
             }
         }
     }
@@ -52,8 +54,10 @@ final class RemoteConfigManager {
             completion(remoteConfig.configValue(forKey: key.rawValue))
             return
         }
-        fetch(with: remoteConfig.configSettings.minimumFetchInterval) {
-            completion(self.values[key])
+        fetch(with: remoteConfig.configSettings.minimumFetchInterval) { [weak self] in
+            guard let self = self else { return completion(nil) }
+            completion(self.values[key] ?? self.remoteConfig.configValue(forKey: key.rawValue,
+                                                                         source: .default))
         }
     }
     
