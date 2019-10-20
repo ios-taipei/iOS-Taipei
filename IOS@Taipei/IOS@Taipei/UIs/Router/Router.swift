@@ -15,7 +15,7 @@ final class Router {
         case present
     }
     
-    static var keyWindow: UIWindow? {
+    static var appWindow: UIWindow? {
         if let window = (UIApplication.shared.delegate as? AppDelegate)?.window {
             return window
         } else {
@@ -28,17 +28,17 @@ final class Router {
     
     static func changeRootVC(to vc: UIViewController, animated: Bool = true, afterScreenUpdates: Bool = false) {
         guard animated else {
-            keyWindow?.rootViewController = vc
+            appWindow?.rootViewController = vc
             return
         }
         DispatchQueue.main.async {
-            let snap = keyWindow?.rootViewController?.view.snapshotView(afterScreenUpdates: afterScreenUpdates)
+            let snap = appWindow?.rootViewController?.view.snapshotView(afterScreenUpdates: afterScreenUpdates)
             
             if let currSnap = snap {
-                keyWindow?.addSubview(currSnap)
+                appWindow?.addSubview(currSnap)
             }
             
-            keyWindow?.rootViewController = vc
+            appWindow?.rootViewController = vc
             UIView.animate(withDuration: 0.25, animations: {
                 snap?.alpha = 0
             }, completion: { _ in
