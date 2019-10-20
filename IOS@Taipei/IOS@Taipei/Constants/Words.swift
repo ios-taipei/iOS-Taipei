@@ -10,5 +10,8 @@ import Foundation
 
 extension String {
     // Base
-    static let empty = ""
+    static let app_empty = ""
+    
+    // Event
+    static var app_eventDetailDescTitle: String { return "詳情" }
 }

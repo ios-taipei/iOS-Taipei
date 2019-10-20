@@ -10,4 +10,9 @@ import UIKit
 
 extension UIColor {
     
+    // Common
+    static var app_text: UIColor { return .black }
+    
+    // Event
+    static var app_eventDetailTime: UIColor { return .init(hexString: "007AFE") }
 }

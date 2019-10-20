@@ -33,6 +33,8 @@
 		AE1C4E1D235C0498008CF1C3 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1C4E1C235C0498008CF1C3 /* Event.storyboard */; };
 		AEB0D4A1235C129A00673A83 /* RemoteConfigDefaults.plist in Sources */ = {isa = PBXBuildFile; fileRef = C1FBD84723590254003AB0D0 /* RemoteConfigDefaults.plist */; };
 		AEB0D4A3235C1B6200673A83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB0D4A2235C1B6200673A83 /* GoogleService-Info.plist */; };
+		AEB0D4A6235C471D00673A83 /* UIColor + initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB0D4A5235C471D00673A83 /* UIColor + initializer.swift */; };
+		AEB0D4A8235C48C800673A83 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB0D4A7235C48C800673A83 /* Fonts.swift */; };
 		C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91823523F1500BA85F8 /* AppDelegate.swift */; };
 		C17FB91B23523F1500BA85F8 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB91A23523F1500BA85F8 /* EventListVC.swift */; };
 		C17FB92023523F1500BA85F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17FB91E23523F1500BA85F8 /* Main.storyboard */; };
@@ -93,6 +95,8 @@
 		AE1C4E19235C03FA008CF1C3 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		AE1C4E1C235C0498008CF1C3 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		AEB0D4A2235C1B6200673A83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEB0D4A5235C471D00673A83 /* UIColor + initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + initializer.swift"; sourceTree = "<group>"; };
+		AEB0D4A7235C48C800673A83 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		C17FB91523523F1500BA85F8 /* IOS@Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS@Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17FB91823523F1500BA85F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17FB91A23523F1500BA85F8 /* EventListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				AE1C4DFB235BF8D8008CF1C3 /* Colors.swift */,
 				AE1C4DFD235BF8E5008CF1C3 /* Images.swift */,
 				AE1C4DFF235BF8EC008CF1C3 /* Words.swift */,
+				AEB0D4A7235C48C800673A83 /* Fonts.swift */,
 				AE1C4E01235BF8F7008CF1C3 /* NotificationNames.swift */,
 			);
 			path = Constants;
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				AE1C4E0E235BFB03008CF1C3 /* UIApplication + constants.swift */,
+				AEB0D4A4235C470600673A83 /* UIColor */,
 				AE1C4E10235BFB34008CF1C3 /* UIView */,
 			);
 			path = UIKit;
@@ -293,6 +299,14 @@
 				AE1C4E1C235C0498008CF1C3 /* Event.storyboard */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		AEB0D4A4235C470600673A83 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				AEB0D4A5235C471D00673A83 /* UIColor + initializer.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		C17FB90C23523F1500BA85F8 = {
@@ -613,6 +627,7 @@
 			files = (
 				AEB0D4A1235C129A00673A83 /* RemoteConfigDefaults.plist in Sources */,
 				AE1C4DF5235BF60C008CF1C3 /* VCFactory.swift in Sources */,
+				AEB0D4A8235C48C800673A83 /* Fonts.swift in Sources */,
 				AE1C4DFC235BF8D8008CF1C3 /* Colors.swift in Sources */,
 				AE1C4E0F235BFB03008CF1C3 /* UIApplication + constants.swift in Sources */,
 				C1FBD84A235903A8003AB0D0 /* RemoteConfigManager.swift in Sources */,
@@ -622,6 +637,7 @@
 				AE1C4DFE235BF8E5008CF1C3 /* Images.swift in Sources */,
 				AE1C4DF7235BF650008CF1C3 /* SBHelper.swift in Sources */,
 				AE1C4DE7235BF322008CF1C3 /* TabBarController.swift in Sources */,
+				AEB0D4A6235C471D00673A83 /* UIColor + initializer.swift in Sources */,
 				AE1C4E12235BFB40008CF1C3 /* UIView + Constraints.swift in Sources */,
 				AE1C4E02235BF8F7008CF1C3 /* NotificationNames.swift in Sources */,
 				AE1C4E00235BF8EC008CF1C3 /* Words.swift in Sources */,

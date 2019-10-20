@@ -9,6 +9,6 @@
 import Foundation
 
 extension Notification.Name {
-    static let fn_deviceTokenDidGet = Notification.Name("deviceTokenDidGet")
-    static let fn_appInitProcessIsDone = Notification.Name("appInitProcessIsDone")
+    static let fn_deviceTokenDidGet     = Notification.Name("deviceTokenDidGet")
+    static let fn_appInitProcessIsDone  = Notification.Name("appInitProcessIsDone")
 }
