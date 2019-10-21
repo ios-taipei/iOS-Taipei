@@ -19,9 +19,12 @@ final class Router {
         if let window = (UIApplication.shared.delegate as? AppDelegate)?.window {
             return window
         } else {
+            assertionFailure("Exception: AppWindow not found.")
+            
             let window = UIWindow.init(frame: UIScreen.main.bounds)
             window.makeKeyAndVisible()
             (UIApplication.shared.delegate as? AppDelegate)?.window = window
+            
             return window
         }
     }
@@ -88,6 +91,6 @@ final class Router {
     }
     
     private static func getTopNavController() -> UINavigationController? {
-        return (UIApplication.shared.keyWindow?.rootViewController as? NavigationController)
+        return (appWindow?.rootViewController as? NavigationController)
     }
 }
