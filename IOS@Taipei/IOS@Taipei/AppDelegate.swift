@@ -9,6 +9,10 @@
 import UIKit
 import Firebase
 
+#if !DEBUG
+public func print(_ items: Any..., separator: String = "", terminator: String = "") {}
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

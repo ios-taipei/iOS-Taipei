@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  IOS@Taipei
 //
 //  Created by kidnapper on 2019/10/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class EventListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
