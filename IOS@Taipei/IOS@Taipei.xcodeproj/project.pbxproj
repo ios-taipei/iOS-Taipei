@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0054357697DE9C13EAD7E9E4 /* Pods_IOS_TaipeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E470F5C0E81C3F1560706CD /* Pods_IOS_TaipeiTests.framework */; };
+		05CF561F236011DA00DEA44A /* GroupEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF561E236011DA00DEA44A /* GroupEventRepository.swift */; };
+		05CF5622236018A600DEA44A /* GroupEventResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF5621236018A600DEA44A /* GroupEventResult.swift */; };
+		05CF562523602FD300DEA44A /* GroupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF562423602FD300DEA44A /* GroupEvent.swift */; };
+		05CF562723602FE900DEA44A /* GroupEventCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF562623602FE900DEA44A /* GroupEventCover.swift */; };
+		05CF56292360301E00DEA44A /* GroupEventPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CF56282360301E00DEA44A /* GroupEventPlace.swift */; };
 		8FA9B74F267D968B9BDD197C /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB1040B9236A77D72F8CAF7 /* Pods_IOS_Taipei_IOS_TaipeiUITests.framework */; };
 		AE1C4DE7235BF322008CF1C3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C4DE6235BF322008CF1C3 /* TabBarController.swift */; };
 		AE1C4DE8235BF322008CF1C3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C4DE6235BF322008CF1C3 /* TabBarController.swift */; };
@@ -66,6 +71,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05CF561E236011DA00DEA44A /* GroupEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventRepository.swift; sourceTree = "<group>"; };
+		05CF5621236018A600DEA44A /* GroupEventResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventResult.swift; sourceTree = "<group>"; };
+		05CF562423602FD300DEA44A /* GroupEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEvent.swift; sourceTree = "<group>"; };
+		05CF562623602FE900DEA44A /* GroupEventCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventCover.swift; sourceTree = "<group>"; };
+		05CF56282360301E00DEA44A /* GroupEventPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEventPlace.swift; sourceTree = "<group>"; };
 		0B7F372F5D56A8548AF5BA35 /* Pods-IOS@TaipeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@TaipeiTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS@TaipeiTests/Pods-IOS@TaipeiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		336250609969D4A9013A738D /* Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE0003A2D06E98947B9C6CD /* Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS@Taipei-IOS@TaipeiUITests/Pods-IOS@Taipei-IOS@TaipeiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +155,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05CF561D236011BC00DEA44A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				05CF561E236011DA00DEA44A /* GroupEventRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		05CF56202360125F00DEA44A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05CF562323602FC600DEA44A /* GroupEvent */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05CF562323602FC600DEA44A /* GroupEvent */ = {
+			isa = PBXGroup;
+			children = (
+				05CF5621236018A600DEA44A /* GroupEventResult.swift */,
+				05CF562423602FD300DEA44A /* GroupEvent.swift */,
+				05CF562623602FE900DEA44A /* GroupEventCover.swift */,
+				05CF56282360301E00DEA44A /* GroupEventPlace.swift */,
+			);
+			path = GroupEvent;
+			sourceTree = "<group>";
+		};
 		4A04E760BD2A907DD204CF37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +373,8 @@
 			children = (
 				C17FB91823523F1500BA85F8 /* AppDelegate.swift */,
 				AE1367BE235AB12900FF3F30 /* UIs */,
+				05CF56202360125F00DEA44A /* Model */,
+				05CF561D236011BC00DEA44A /* Repository */,
 				C1FBD84B23590569003AB0D0 /* Manager */,
 				AE1C4DF8235BF8BD008CF1C3 /* Constants */,
 				AE1C4E03235BF984008CF1C3 /* Extensions */,
@@ -629,6 +668,7 @@
 				AE1C4DF5235BF60C008CF1C3 /* VCFactory.swift in Sources */,
 				AEB0D4A8235C48C800673A83 /* Fonts.swift in Sources */,
 				AE1C4DFC235BF8D8008CF1C3 /* Colors.swift in Sources */,
+				05CF562723602FE900DEA44A /* GroupEventCover.swift in Sources */,
 				AE1C4E0F235BFB03008CF1C3 /* UIApplication + constants.swift in Sources */,
 				C1FBD84A235903A8003AB0D0 /* RemoteConfigManager.swift in Sources */,
 				AE1C4E0B235BFA29008CF1C3 /* NSObject + ClassName.swift in Sources */,
@@ -640,15 +680,19 @@
 				AEB0D4A6235C471D00673A83 /* UIColor + initializer.swift in Sources */,
 				AE1C4E12235BFB40008CF1C3 /* UIView + Constraints.swift in Sources */,
 				AE1C4E02235BF8F7008CF1C3 /* NotificationNames.swift in Sources */,
+				05CF562523602FD300DEA44A /* GroupEvent.swift in Sources */,
 				AE1C4E00235BF8EC008CF1C3 /* Words.swift in Sources */,
 				AE1C4E05235BF9A8008CF1C3 /* Array + Extension.swift in Sources */,
 				AE1C4E14235BFBBB008CF1C3 /* UIView + Animation.swift in Sources */,
 				C17FB91923523F1500BA85F8 /* AppDelegate.swift in Sources */,
 				AE1C4DEA235BF3F8008CF1C3 /* LaunchVC.swift in Sources */,
 				AE1C4E07235BF9EF008CF1C3 /* NSObject + Builder.swift in Sources */,
+				05CF56292360301E00DEA44A /* GroupEventPlace.swift in Sources */,
 				AE1C4DED235BF54A008CF1C3 /* Router.swift in Sources */,
+				05CF561F236011DA00DEA44A /* GroupEventRepository.swift in Sources */,
 				AE1C4DEF235BF594008CF1C3 /* NavigationController.swift in Sources */,
 				C17FB91B23523F1500BA85F8 /* EventListVC.swift in Sources */,
+				05CF5622236018A600DEA44A /* GroupEventResult.swift in Sources */,
 				AE1C4DF2235BF5DA008CF1C3 /* Router + Main.swift in Sources */,
 				AE1C4E1A235C03FA008CF1C3 /* EventDetailVC.swift in Sources */,
 			);
