@@ -19,7 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()        
+        FirebaseApp.configure()
+        
+        GroupEventRepository.shared.fetchGroupEvents { (result) in
+            switch result {
+            case .success(let events):
+                print(events)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
         return true
     }
 

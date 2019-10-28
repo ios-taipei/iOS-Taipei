@@ -14,8 +14,8 @@ struct GroupEventCover: Codable {
     let id: String
 
     enum CodingKeys: String, CodingKey {
-        case offsetX = "offset_x"
-        case offsetY = "offset_y"
+        case offsetX
+        case offsetY
         case source, id
     }
 }

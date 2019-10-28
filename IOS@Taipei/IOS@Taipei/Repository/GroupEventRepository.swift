@@ -49,7 +49,10 @@ enum APIError: Error {
                 }
 
                 do {
-                    let result = try JSONDecoder().decode(GroupEventResult.self, from: data)
+                    let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
+                    
+                    let result = try decoder.decode(GroupEventResult.self, from: data)
                     hanlder(.success(result.data))
                 } catch {
                     hanlder(.failure(error))

@@ -21,17 +21,17 @@ struct GroupEvent: Codable {
     let type, id: String
 
     enum CodingKeys: String, CodingKey {
-        case interestedCount = "interested_count"
-        case attendingCount = "attending_count"
-        case declinedCount = "declined_count"
-        case maybeCount = "maybe_count"
-        case noreplyCount = "noreply_count"
+        case interestedCount
+        case attendingCount
+        case declinedCount
+        case maybeCount
+        case noreplyCount
         case cover
         case description
         case name, place
-        case startTime = "start_time"
-        case endTime = "end_time"
-        case updatedTime = "updated_time"
+        case startTime
+        case endTime
+        case updatedTime
         case type, id
     }
 }
